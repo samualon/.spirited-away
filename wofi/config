@@ -1,0 +1,9 @@
+show=drun
+term=kitty
+prompt=Search anything...
+insensitive=true
+
+width=700
+height=300
+hide_scroll=true
+key_expand=Shift_L
