@@ -4,7 +4,7 @@
 		"spacing": 18,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["temperature", "cpu", "memory", "wireplumber", "network", "hyprland/language", "battery", "clock"],
+    "modules-right": ["temperature", "wireplumber", "network", "hyprland/language", "battery", "tray",  "clock"],
 		"wireplumber": {
 			"format": "{volume}% ♫",
 		},
@@ -14,12 +14,6 @@
 		"temperature": {
 			"format": "{temperatureC}°",
 			"critical-threshold": 65,
-		},
-		"cpu": {
-			"format": "CPU {usage}%",
-		},
-		"memory": {
-			"format": "RAM {percentage}%",
 		},
 		"network": {
 				"interface": "wlo2",
@@ -34,6 +28,13 @@
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+		"tray": {
+			"show-passive-items": true,
+			"spacing": 8,
+			"icons": {
+				"blueman": "bluetooth"
+			}
+		},
 		"clock": {
 				"format-alt": "{:%a, %d. %b  %H:%M}"
 		}
